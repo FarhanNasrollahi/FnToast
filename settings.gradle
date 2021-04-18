@@ -1,0 +1,3 @@
+include ':FnToast'
+include ':app'
+rootProject.name = "test"
