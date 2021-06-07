@@ -1,4 +1,4 @@
-<h1>FnNotification</h1>
+<h1>FnToast</h1>
 
 Add this in your app's build.gradle file(Using Android Studio and Gradle):
 
