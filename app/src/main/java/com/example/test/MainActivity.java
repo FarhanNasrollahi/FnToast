@@ -15,20 +15,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.buttons).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FnToast fnToast = new FnToast(MainActivity.this);
-                fnToast.setBackgroundColor(Color.BLUE);
-                fnToast.setTextColor(Color.BLACK);
-                fnToast.setText("salam");
-                fnToast.setRadius(10);
-                fnToast.setMargin_L_R(40);
-                fnToast.setIconVisibility(true);
-                fnToast.setForceDark(false);
-                fnToast.setDuration(FnToast.LENGTH.SHORT);
-                fnToast.show();
-            }
+        findViewById(R.id.buttons).setOnClickListener(v -> {
+
+            FnToast fnToast = new FnToast(MainActivity.this);
+            fnToast.setBackgroundColor(Color.BLUE);
+            fnToast.setTextColor(Color.BLACK);
+            fnToast.setText("salam");
+            fnToast.setRadius(10);
+            fnToast.setMargin_L_R(40);
+            fnToast.setIconVisibility(true);
+            fnToast.setForceDark(false);
+            fnToast.setDuration(FnToast.LENGTH.SHORT);
+            fnToast.show();
+
+
+
         });
     }
 }
